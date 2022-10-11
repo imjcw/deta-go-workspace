@@ -7,4 +7,6 @@ RUN set -e;\
     sed -i 's!http://archive.ubuntu.com!'http://mirrors.aliyun.com'!g' /etc/apt/sources.list; \
     apt update; \
     apt install -y curl unzip git; \
-    curl -fsSL https://get.deta.dev/cli.sh | sh;
+    curl -fsSL https://get.deta.dev/cli.sh | sh; \
+    export PATH="/root/.deta/bin:$PATH"; \
+    deta login;
