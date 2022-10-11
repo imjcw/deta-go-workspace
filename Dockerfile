@@ -8,5 +8,4 @@ RUN set -e;\
     apt update; \
     apt install -y curl unzip git; \
     curl -fsSL https://get.deta.dev/cli.sh | sh; \
-    export PATH="/root/.deta/bin:$PATH"; \
-    deta login;
+    export PATH="/root/.deta/bin:$PATH";
